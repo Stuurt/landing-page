@@ -18,7 +18,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--white-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,7 +55,6 @@ a {
 }
 
 .main-bg {
-    background-image: url('../image/slanted-gradient.svg');
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
@@ -69,6 +68,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     padding: var(--gap);
+    background-color: #ee4d2d;
 }
 
 .section {
@@ -94,7 +94,7 @@ a {
     display: block;
     padding: 2rem;
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: var(--white-color);
     position: relative;
 }
 
@@ -116,7 +116,7 @@ a {
 
 .menu h1 {
     font-size: 2.3rem;
-    color: var(--primary-color);
+    color: var(--white-color);
 }
 
 .menu h1 a {
