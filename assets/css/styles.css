@@ -1,6 +1,7 @@
 :root {
     --primary-color: #000000;
     --white-color: #ffffff;
+    --light-gray-color: #eee;
     --gap: 3rem;
 }
 
@@ -15,17 +16,17 @@ html {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
+    color: var(--primary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
     font-size: 6rem;
-    font-weight: 900;
     text-transform: uppercase;
 }
 
@@ -49,6 +50,10 @@ h6 {
     font-size: 3.5rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 .main-bg {
     background-image: url('../image/slanted-gradient.svg');
     background-size: cover;
@@ -68,4 +73,60 @@ h6 {
 
 .section {
     min-height: 100vh;
+}
+
+.menu {
+    background: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: rgb(58, 10, 230);
+    transition: all 200ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+
+.menu h1 a {
+    color: inherit;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
 }
